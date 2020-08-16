@@ -23,7 +23,7 @@ def move(board, index, token="X")
 end
 
 def turn(board)
-  until valid_move?(board,index)
+  until valid_move?(board, index) = false
     puts "Please enter 1-9:"
     user_input = gets.strip
     input_to_index(user_input)
