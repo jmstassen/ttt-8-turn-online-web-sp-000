@@ -11,11 +11,11 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  !(position_taken?(board, index)) && index.between?(0,8)
+  !position_taken?(board, index) && index.between?(0,8)
 end
 
 def position_taken?(board, index)
-  !((index == " " || index == "") || index == nil)
+  !((board[index] == " " || board[index] == "") || board[index] == nil)
 end
 
 def move(board, index, token)
